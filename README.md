@@ -227,6 +227,7 @@ Buka Kembali file app/config/Routes.php, kemudian tambahkan routing untuk artike
 - Akses menu admin dengan url http://localhost:8080/admin/artikel
 
 ![23](https://user-images.githubusercontent.com/56241285/122867496-cbceb500-d353-11eb-8ccb-96292eacad8b.png)
+
 ## Langkah 9 - Menambah Data Artikel
 Tambahkan fungsi/method baru pada Controller Artikel dengan nama add()
 
@@ -257,6 +258,73 @@ Tambahkan fungsi/method baru pada Controller Artikel dengan nama add()
 - Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete()
 
 ![30](https://user-images.githubusercontent.com/56241285/122870562-05a1ba80-d358-11eb-8835-b67b2ae83f3b.png)
+
+<b></b>
+# Praktikum 13 - Lanjutan Praktikum sebelumnya - Pemrograman Web
+```bash
+Nama      : Robi Abda'u
+NIM       : 311910563
+Kelas     : TI.19.B1
+M. Kuliah : Pemograman Web
+Dosen     : Agung Nugroho,S.Kom.,M.Kom
+```
+
+
+1. Membuat Tabel User :
+
+![image](https://user-images.githubusercontent.com/81431392/123540098-20768500-d6f2-11eb-93a6-cb00911e3180.png)
+
+2. Membuat Model User :
+
+![image](https://user-images.githubusercontent.com/81431392/123540179-937ffb80-d6f2-11eb-818b-482d350a93f9.png)
+
+3. Membuat Controller User :
+
+![image](https://user-images.githubusercontent.com/81431392/123540385-87486e00-d6f3-11eb-99f1-458b33b7e5fc.png)
+
+4. Membuat View Login :
+
+![image](https://user-images.githubusercontent.com/81431392/123542712-004dc280-d700-11eb-9d92-211abb9beffd.png)
+
+5. Membuat Database Seeder :
+
+- jalankan pada CLI php spark make:seeder UserSeeder 
+- edit file Database/Seeds/UserSeeder.php : 
+
+ ![image](https://user-images.githubusercontent.com/81431392/123540730-59642900-d6f5-11eb-9a43-32677bb79179.png)
+
+
+- lalu jalankan lagi CLI php spark db:seed UserSeeder
+
+hasil outputnya : 
+
+![image](https://user-images.githubusercontent.com/81431392/123542761-43a83100-d700-11eb-9594-c250764b7d7c.png)
+
+
+ketika isi email,password maka muncul pada halaman portal admin :
+
+![image](https://user-images.githubusercontent.com/81431392/123542783-69cdd100-d700-11eb-8c1d-f8ef7f0c9e5a.png)
+
+6. Menambahkan Auth Filter : 
+
+![image](https://user-images.githubusercontent.com/81431392/123542912-ea8ccd00-d700-11eb-926f-8b36650305a9.png) 
+ 
+ 7. Konfigurasi file app/Config/Filters.php : 
+ 
+![image](https://user-images.githubusercontent.com/81431392/123542978-55d69f00-d701-11eb-9797-780bcd3f0d63.png) 
+
+8. dan konfigurasi app/Config/Routes.php : 
+
+![image](https://user-images.githubusercontent.com/81431392/123543075-b9f96300-d701-11eb-9117-82d3145dd762.png) 
+
+hasil outputnya : 
+
+![image](https://user-images.githubusercontent.com/81431392/123544719-68ed6d00-d709-11eb-8829-30d641aa2f19.png) 
+
+Fungsi Logout : 
+
+![image](https://user-images.githubusercontent.com/81431392/123544784-b2d65300-d709-11eb-92d7-2ee02d1adcc6.png) 
+
 
 
 
